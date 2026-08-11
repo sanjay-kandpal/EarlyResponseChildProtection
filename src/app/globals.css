@@ -1,0 +1,35 @@
+/* Intentionally minimal. This project is a static clone of the privasapien.com
+   homepage; all page styling comes from PrivaSapien's own compiled stylesheet
+   linked in layout.tsx. No local Tailwind is applied so nothing conflicts with
+   the captured markup. */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Local overrides — PrivaSapien's remote CSS won't include classes we invent.
+   Keep stage tabs above the detail card and avoid clipping on tab switch. */
+#lifecycle-tabs {
+  overflow: visible;
+}
+
+#lifecycle-tabs [data-lifecycle-tab] {
+  z-index: 20;
+}
+
+#lifecycle-tabs [data-lifecycle-panel] {
+  position: relative;
+  z-index: 10;
+}
+
+/* Hero orbit: remote CSS forces transform:none on some rings — allow rotation. */
+#hero-orbit [data-orbit-arc] {
+  transition: transform 0.5s ease !important;
+}
+
+/* Temporarily hidden — re-enable by removing this rule + the hidden attrs on #trusted-leaders. */
+#trusted-leaders {
+  display: none !important;
+}
