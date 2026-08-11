@@ -11,7 +11,7 @@ const FONTS_CSS =
 const HEAD_KEYFRAMES = `.grecaptcha-badge{visibility:hidden}`;
 
 export const metadata: Metadata = {
-  title: "PrivaSapien | Systems-First Trust Platform for Data, AI & Agents",
+  title: "Early Warning Child System",
   description:
     "Design trust into your data and AI landscape. PrivaSapien builds privacy, responsible AI, and trusted agents directly into your systems so you can scale with confidence.",
   icons: { icon: "https://privasapien.com/favicon.png" },

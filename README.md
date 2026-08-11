@@ -66,6 +66,7 @@ Open [http://localhost:3000](http://localhost:3000).
 8. DPDP lifecycle curved tabs (`#lifecycle-tabs`): static capture only had the Data Collection panel — added the other four panels + `LifecycleTabsScript` so stage buttons switch the detail card (inline `display` toggle + scroll card into view on click). Do not invent new Tailwind utilities in the HTML — styling comes from PrivaSapien’s remote CSS; use `globals.css` for local overrides.
 9. Hero “Trusted across the world by leaders” logo marquee (`#trusted-leaders`) hidden for now (`display:none` + `globals.css`).
 10. Pre-commit hook via Husky + lint-staged: ESLint (with `--fix`) on staged JS/TS files before commit.
+11. Browser page title set to **Early Warning Child System** (`src/app/layout.tsx` metadata).
 
 ## Next
 
