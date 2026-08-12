@@ -70,6 +70,7 @@ Open [http://localhost:3000](http://localhost:3000).
 12. Brand accents remapped from cyan/blue (`#00B2BD`, `#0065ff`, `blue-*` / `sky-*` / `indigo-*`) to emerald green (`#059669` / `emerald-*`), matching the hero orbit + NeoStats logo. Local utilities in `globals.css` cover arbitrary hex classes the remote PrivaSapien CSS does not compile.
 13. Hero `<h1>` copy: **Empowering Early Child Protection, Beyond the Visit**.
 14. Footer address: NeoStats Dubai HQ (from [neostats.ai/about](https://neostats.ai/about)) — 710 B, The Ibn Batuta Gate Offices, Jabal Ali, Dubai, U.A.E.
+15. Footer “Follow Us” social links updated to NeoStats profiles: [LinkedIn](https://in.linkedin.com/company/neostats), [YouTube](https://www.youtube.com/@neostatsanalyticssolutions) (Twitter removed — not listed on neostats.ai).
 
 ## Next
 
