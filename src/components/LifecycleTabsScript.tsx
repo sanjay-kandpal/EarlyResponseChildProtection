@@ -1,13 +1,13 @@
-"use client";
+﻿"use client";
 
 import { useEffect } from "react";
 
 const ACTIVE_BTN =
   "flex flex-col justify-start items-center gap-4 lg:absolute transition-all duration-150 flex-[0_0_auto] text-[14px] leading-[20px] font-medium z-10 text-[#000] font-bold scale-110";
 const INACTIVE_BTN =
-  "flex flex-col justify-start items-center gap-4 lg:absolute transition-all duration-150 flex-[0_0_auto] text-[14px] leading-[20px] font-medium z-10 text-[#344054] hover:text-[#00B2BD]";
+  "flex flex-col justify-start items-center gap-4 lg:absolute transition-all duration-150 flex-[0_0_auto] text-[14px] leading-[20px] font-medium z-10 text-[#344054] hover:text-[#059669]";
 const ACTIVE_ICON =
-  "inline-flex custom-shadow-xl items-center justify-center p-4 rounded-full border-[1px] w-fit text-5xl transition-all duration-300 border-[#fff] bg-[linear-gradient(135deg,_rgba(0,0,0,1)_0%,_rgba(0,0,0,1)_100%)] shadow-lg shadow-[#00b2bd33]";
+  "inline-flex custom-shadow-xl items-center justify-center p-4 rounded-full border-[1px] w-fit text-5xl transition-all duration-300 border-[#fff] bg-[linear-gradient(135deg,_rgba(0,0,0,1)_0%,_rgba(0,0,0,1)_100%)] shadow-lg shadow-[#05966933]";
 const INACTIVE_ICON =
   "inline-flex custom-shadow-xl items-center justify-center p-4 rounded-full border-[1px] w-fit text-5xl transition-all duration-300 border-transparent bg-white hover:border-[#fff]";
 
@@ -48,7 +48,7 @@ function activate(id: string, opts: { scroll?: boolean } = {}) {
   const activePanel = panels.find((p) => p.dataset.lifecyclePanel === id);
   if (!activePanel) return;
   const rect = activePanel.getBoundingClientRect();
-  // Only if the whole card is below the viewport — small nudge, keep arc on screen.
+  // Only if the whole card is below the viewport â€” small nudge, keep arc on screen.
   if (rect.top >= window.innerHeight) {
     window.scrollBy({
       top: rect.top - window.innerHeight + Math.min(220, rect.height * 0.45),

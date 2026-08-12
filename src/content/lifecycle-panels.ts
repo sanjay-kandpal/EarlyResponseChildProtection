@@ -1,4 +1,4 @@
-const ALERT_ICON = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg>`;
+﻿const ALERT_ICON = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg>`;
 
 export type LifecyclePanel = {
   id: string;
@@ -84,7 +84,7 @@ export function renderLifecyclePanel(
     )
     .join("");
 
-  return `<div data-lifecycle-panel="${panel.id}" class="${visible ? "" : "hidden "}w-full sm:w-[100%] lg:w-full lg:pt-2 transition-all duration-300 ease-in-out mt-8 lg:mt-0 flex justify-center lg:justify-end"><div class="bg-white rounded-3xl p-8 shadow-xl border border-slate-100 w-full relative overflow-hidden group"><div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#00B2BD] to-blue-400"></div><div class="flex items-start justify-between mb-2"><div><h3 class="text-[24px] font-bold text-slate-900 leading-tight">${escapeHtml(panel.title)}</h3></div></div><p class="text-[18px] font-medium text-slate-700 mb-6 leading-relaxed">${escapeHtml(panel.subtitle)}</p><div class="space-y-4 bg-slate-50 rounded-2xl p-5 border border-slate-100">${bullets}</div></div></div>`;
+  return `<div data-lifecycle-panel="${panel.id}" class="${visible ? "" : "hidden "}w-full sm:w-[100%] lg:w-full lg:pt-2 transition-all duration-300 ease-in-out mt-8 lg:mt-0 flex justify-center lg:justify-end"><div class="bg-white rounded-3xl p-8 shadow-xl border border-slate-100 w-full relative overflow-hidden group"><div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#059669] to-emerald-400"></div><div class="flex items-start justify-between mb-2"><div><h3 class="text-[24px] font-bold text-slate-900 leading-tight">${escapeHtml(panel.title)}</h3></div></div><p class="text-[18px] font-medium text-slate-700 mb-6 leading-relaxed">${escapeHtml(panel.subtitle)}</p><div class="space-y-4 bg-slate-50 rounded-2xl p-5 border border-slate-100">${bullets}</div></div></div>`;
 }
 
 function escapeHtml(s: string): string {

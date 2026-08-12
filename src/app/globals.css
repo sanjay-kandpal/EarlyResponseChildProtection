@@ -33,3 +33,57 @@ body {
 #trusted-leaders {
   display: none !important;
 }
+
+/* Brand accent: cyan/blue (#00B2BD, #0065ff, blue-*) remapped to emerald (#059669).
+   Remote PrivaSapien CSS only compiles the old arbitrary hex utilities — redefine them here. */
+.bg-\[\#059669\],
+.bg-\[\#00B2BD\],
+.bg-\[\#00b2bd\] {
+  background-color: #059669 !important;
+}
+.text-\[\#059669\],
+.text-\[\#0065ff\],
+.text-\[\#00B2BD\] {
+  color: #059669 !important;
+}
+.border-\[\#059669\],
+.border-\[\#0065ff\],
+.border-\[\#00B2BD\] {
+  border-color: #059669 !important;
+}
+.border-\[\#059669\]\/50,
+.border-\[\#00B2BD\]\/50 {
+  border-color: rgb(5 150 105 / 0.5) !important;
+}
+.from-\[\#059669\],
+.from-\[\#00B2BD\] {
+  --tw-gradient-from: #059669 !important;
+  --tw-gradient-stops: var(--tw-gradient-from),
+    var(--tw-gradient-to, rgb(5 150 105 / 0)) !important;
+}
+.to-emerald-400 {
+  --tw-gradient-to: #34d399 !important;
+}
+.hover\:text-\[\#059669\]:hover,
+.hover\:text-\[\#00B2BD\]:hover {
+  color: #059669 !important;
+}
+.hover\:border-\[\#059669\]:hover,
+.hover\:border-\[\#00B2BD\]:hover {
+  border-color: #059669 !important;
+}
+.shadow-\[\#05966933\],
+.shadow-\[\#00b2bd33\] {
+  --tw-shadow-color: #05966933 !important;
+}
+.selection\:bg-emerald-100 *::selection,
+.selection\:bg-emerald-100::selection {
+  background-color: #d1fae5 !important;
+}
+.selection\:text-emerald-900 *::selection,
+.selection\:text-emerald-900::selection {
+  color: #064e3b !important;
+}
+.hover\:bg-emerald-700:hover {
+  background-color: #047857 !important;
+}

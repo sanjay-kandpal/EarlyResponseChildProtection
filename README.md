@@ -1,4 +1,4 @@
-# Early Response Child Protection
+;# Early Response Child Protection
 
 Next.js baseline for the Early Response Child Protection project. Feature work is pending further instructions.
 
@@ -67,6 +67,8 @@ Open [http://localhost:3000](http://localhost:3000).
 9. Hero “Trusted across the world by leaders” logo marquee (`#trusted-leaders`) hidden for now (`display:none` + `globals.css`).
 10. Pre-commit hook via Husky + lint-staged: ESLint (with `--fix`) on staged JS/TS files before commit.
 11. Browser page title set to **Early Warning Child System** (`src/app/layout.tsx` metadata).
+12. Brand accents remapped from cyan/blue (`#00B2BD`, `#0065ff`, `blue-*` / `sky-*` / `indigo-*`) to emerald green (`#059669` / `emerald-*`), matching the hero orbit + NeoStats logo. Local utilities in `globals.css` cover arbitrary hex classes the remote PrivaSapien CSS does not compile.
+13. Hero `<h1>` copy: **Empowering Early Child Protection, Beyond the Visit**.
 
 ## Next
 
