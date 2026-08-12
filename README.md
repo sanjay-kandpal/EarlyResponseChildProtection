@@ -71,6 +71,7 @@ Open [http://localhost:3000](http://localhost:3000).
 13. Hero `<h1>` copy: **Empowering Early Child Protection, Beyond the Visit**.
 14. Footer address: NeoStats Dubai HQ (from [neostats.ai/about](https://neostats.ai/about)) — 710 B, The Ibn Batuta Gate Offices, Jabal Ali, Dubai, U.A.E.
 15. Footer “Follow Us” social links updated to NeoStats profiles: [LinkedIn](https://in.linkedin.com/company/neostats), [YouTube](https://www.youtube.com/@neostatsanalyticssolutions) (Twitter removed — not listed on neostats.ai).
+16. Top announcement bar: removed “MSF × IMDA Call 29” suffix from the SafeWatch tagline and removed the “Learn More” button.
 
 ## Next
 
